@@ -42,16 +42,14 @@ class Stage3Screen extends StatelessWidget {
       } else if (cropName == 'Mango') {
         return 'Although there are at least 14 elements or nutrients that are required for plant growth, the 4 key nutrients for mango production are nitrogen (N), potassium (K), calcium (Ca) and boron (B). Understanding the interactions of these 4 nutrients is the key to good productivity and fruit quality in mangoes.';
       } else if (cropName == 'Cucumber') {
-        return '''
-        Cucumbers need moderate nitrogen and high phosphorus and potassium, so an organic plant food with the first number lower than the last two (like 3-4-6) is good. Keep plants well-watered to avoid bitter-tasting cucumbers.
+        return '''Cucumbers need moderate nitrogen and high phosphorus and potassium, so an organic plant food with the first number lower than the last two (like 3-4-6) is good. Keep plants well-watered to avoid bitter-tasting cucumbers.
+Cucumbers require different levels of nutrients at different stages of growth:
+  - Growth: Cucumbers need more nitrogen during this stage.
+  - Flowering and setting fruit: Cucumbers need more potassium during this stage.
 
-        Cucumbers require different levels of nutrients at different stages of growth:
-        - Growth: Cucumbers need more nitrogen during this stage.
-        - Flowering and setting fruit: Cucumbers need more potassium during this stage.
-
-        Some common nutrient disorders in cucumber plants include:
-        - Potassium deficiency: This causes yellowing between the veins of the oldest leaves.
-        - Boron deficiency: This causes yellow streaks and corky markings on the fruit.
+Some common nutrient disorders in cucumber plants include:
+  - Potassium deficiency: This causes yellowing between the veins of the oldest leaves.
+  - Boron deficiency: This causes yellow streaks and corky markings on the fruit.
       ''';
       }
     }
