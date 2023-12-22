@@ -76,7 +76,7 @@ class ApiBaseHelper {
     try {
       var headers = {'Content-Type': 'application/json'};
       var request = http.Request(
-          'POST', Uri.parse('http://13.200.252.45/api/Users/signUp'));
+          'POST', Uri.parse('http://13.232.210.126/api/Users/signUp'));
       request.body = json.encode(authmodel);
       request.headers.addAll(headers);
 
@@ -93,11 +93,10 @@ class ApiBaseHelper {
   }
 
   Future<dynamic> verifyOtp(String otp) async {
-
-var headers = {'Content-Type': 'application/json'};
+    var headers = {'Content-Type': 'application/json'};
     var request = http.Request('POST',
-        Uri.parse('http://13.200.252.45/api/Users/verifyOtp?enteredOtp=$otp'));
-request.headers.addAll(headers);
+        Uri.parse('http://13.232.210.126/api/Users/verifyOtp?enteredOtp=$otp'));
+    request.headers.addAll(headers);
     http.StreamedResponse response = await request.send();
 
     if (response.statusCode == 200) {
